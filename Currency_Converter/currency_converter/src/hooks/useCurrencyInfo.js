@@ -7,7 +7,7 @@ function useCurrencyInfo(currency) {
         fetch(`https://open.er-api.com/v6/latest/${currency}`)
             .then((res) => res.json())
             .then((res) => {
-                setData(res.rates); // Correctly set rates instead of undefined value
+                setData(res.rates); 
             })
             .catch((error) => {
                 console.error("Error fetching currency data:", error);
